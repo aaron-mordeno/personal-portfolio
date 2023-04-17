@@ -65,31 +65,3 @@ function lightTheme() {
   document.documentElement.style.setProperty("--card-border", "#868e96");
   document.documentElement.style.setProperty("--card-background", "#fff");
 }
-
-// form validation
-const form = document.getElementsByTagName("form");
-const name = document.getElementById("inputName");
-const subject = document.getElementById("inputSubject");
-const message = document.getElementById("inputMessage");
-const send = document.getElementById("send");
-
-send.addEventListener("click", formValidation);
-
-function formValidation() {
-  console.log("clicked");
-  if (name.value === "" || subject.value === "" || message.value === "") {
-    let errorMessage = "";
-    if (name.value === "") {
-      errorMessage += " Name";
-    }
-    if (subject.value === "") {
-      errorMessage += " Subject";
-    }
-    if (message.value === "") {
-      errorMessage += " Message";
-    }
-    alert("Please fill in:" + errorMessage);
-  } else {
-    alert("Thanks for your message!");
-  }
-}

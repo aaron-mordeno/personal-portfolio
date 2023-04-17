@@ -49,6 +49,13 @@ a:focus,
 a:hover {
   color: #0071cc;
 }
+.email-text {
+  font-size: 1.5em;
+  margin-bottom: 0 !important;
+}
+.main h1 {
+  font-size: 5em;
+}
 
 /* card styles */
 .card {
@@ -163,6 +170,24 @@ svg:hover {
   fill: #007bff;
 }
 
+/* main header animations */
+@keyframes slideInUp {
+  0% {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.main h1,
+.main h3,
+.main p {
+  animation: 0.8s ease-out 0s 1 slideInUp;
+}
+
 /* tablet screen size*/
 @media (min-width: 768px) {
   section.portfolio-section {
@@ -170,6 +195,9 @@ svg:hover {
   }
   section.portfolio-section {
     min-width: 18rem;
+  }
+  .main h1 {
+    font-size: 6em;
   }
 }
 
@@ -216,5 +244,9 @@ svg:hover {
   }
   #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
     display: inline-block;
+  }
+  .email-text {
+    font-size: 2.5em;
+    margin-bottom: 0 !important;
   }
 }
