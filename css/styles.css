@@ -1,0 +1,220 @@
+/*!
+ * Start Bootstrap - Resume v4.0.0-beta.2 (https://startbootstrap.com/template-overviews/resume)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
+ */
+
+:root {
+  --background-color: #fff;
+  --body-color: #343a40;
+  --header-color: #343a40;
+  --card-header: #343a40;
+  --card-text: #868e96;
+  --card-border: #868e96;
+  --card-background: #fff;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  padding-top: 54px;
+  color: var(--body-color);
+  background-color: var(--background-color);
+}
+
+/* text styles */
+.header-text {
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--header-color);
+}
+h1 {
+  font-size: 6rem;
+  line-height: 5.5rem;
+}
+h2 {
+  font-size: 3.5rem;
+}
+.subheading {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-size: 1.35rem;
+}
+a {
+  color: #007bff;
+}
+a:active,
+a:focus,
+a:hover {
+  color: #0071cc;
+}
+
+/* card styles */
+.card {
+  border: 1px solid var(--card-border);
+  background-color: var(--card-background);
+}
+
+.card-title {
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--card-header);
+}
+p.card-text {
+  color: var(--card-text);
+}
+
+/* section styles */
+section.portfolio-section {
+  border-bottom: 1px solid #868e96;
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}
+section.portfolio-section:nth-child(3) {
+  border-bottom: none;
+}
+#inputMessage {
+  height: 200px;
+}
+.btn {
+  background-color: #007bff;
+  color: #fff;
+}
+#send.btn {
+  width: 100%;
+}
+
+/* nav bar */
+#sideNav .navbar-nav .nav-item .nav-link {
+  font-weight: 600;
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.nav-link {
+  cursor: pointer;
+}
+
+.bg-primary {
+  background-color: #007bff !important;
+}
+
+/* toggle switch */
+.toggle-switch {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  position: relative;
+  width: 30px;
+  height: 18px;
+  border-radius: 25px;
+  background-color: #fff;
+  transition: background 0.3s;
+  transform: translate(0, 25%);
+  outline: none;
+  cursor: pointer;
+}
+
+.toggle-switch::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  height: 0.75rem;
+  width: 0.75rem;
+  background-color: #007bff;
+  transition: left 0.3s;
+}
+
+.toggle-switch:checked {
+  background-color: #343a40;
+}
+
+.toggle-switch:checked::after {
+  left: 70%;
+}
+
+/* svg icon styles */
+.list-social-icons a {
+  color: #868e96;
+}
+.list-social-icons a:hover {
+  color: #007bff;
+}
+.list-social-icons a .fa-lg {
+  font-size: 1.75rem;
+}
+.list-icons {
+  font-size: 3rem;
+}
+.list-icons .list-inline-item i:hover {
+  color: #007bff;
+}
+svg {
+  color: #868e96;
+}
+svg:hover {
+  fill: #007bff;
+}
+
+/* tablet screen size*/
+@media (min-width: 768px) {
+  section.portfolio-section {
+    min-height: 100vh;
+  }
+  section.portfolio-section {
+    min-width: 18rem;
+  }
+}
+
+/* desktop screen size */
+@media (min-width: 992px) {
+  body {
+    padding-top: 0;
+    padding-left: 17rem;
+  }
+  section.portfolio-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+  #sideNav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 17rem;
+    height: 100vh;
+  }
+  #sideNav .navbar-brand {
+    display: flex;
+    margin: auto auto 0;
+    padding: 0.5rem;
+  }
+  #sideNav .navbar-brand .img-profile {
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+  }
+  #sideNav .navbar-collapse {
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto;
+  }
+  #sideNav .navbar-collapse .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    display: inline-block;
+  }
+}
