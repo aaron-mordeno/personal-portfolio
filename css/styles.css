@@ -185,7 +185,7 @@ svg:hover {
 .main h1,
 .main h3,
 .main p {
-  animation: 0.8s ease-out 0s 1 slideInUp;
+  animation: 1s ease-out 0s 1 slideInUp;
 }
 
 /* tablet screen size*/
