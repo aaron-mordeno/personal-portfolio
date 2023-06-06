@@ -19,13 +19,13 @@
 }
 
 :root {
-  --background-color: #fff;
-  --body-color: #343a40;
-  --header-color: #343a40;
-  --card-header: #343a40;
-  --card-text: #868e96;
-  --card-border: #868e96;
-  --card-background: #fff;
+  --background-color: #343a40;
+  --body-color: #fff;
+  --header-color: #fff;
+  --card-header: #fff;
+  --card-text: #fff;
+  --card-border: #fff;
+  --card-background: #343a40;
 }
 
 body {
@@ -92,12 +92,8 @@ p.card-text {
 
 /* section styles */
 section.portfolio-section {
-  border-bottom: 1px solid #868e96;
   padding-top: 5rem !important;
   padding-bottom: 5rem !important;
-}
-section.portfolio-section:nth-child(3) {
-  border-bottom: none;
 }
 #inputMessage {
   height: 200px;
@@ -105,9 +101,13 @@ section.portfolio-section:nth-child(3) {
 .btn {
   background-color: #007bff;
   color: #fff;
+  min-width: 105px;
 }
 #send.btn {
   width: 100%;
+}
+#about {
+  min-height: 100vh;
 }
 
 /* nav bar */
@@ -165,34 +165,49 @@ section.portfolio-section:nth-child(3) {
 }
 
 /* svg icon styles */
-.list-social-icons a {
-  color: #868e96;
+.svg-icon {
+  width: 70px;
+  height: 70px;
+  transition: all 0.2s ease-in-out;
 }
-.list-social-icons a:hover {
-  color: #007bff;
-}
-.list-social-icons a .fa-lg {
-  font-size: 1.75rem;
-}
-.list-icons {
-  font-size: 3rem;
-}
-.list-icons .list-inline-item i:hover {
-  color: #007bff;
-}
-svg {
-  color: #868e96;
-}
-svg:hover {
-  fill: #007bff;
+
+.svg-icon:hover {
+  transform: scale(1.1);
 }
 
 /* skill icon styles */
 .skills-p {
   margin-top: 14px;
+  text-align: center;
 }
 .skill-icon {
   max-width: 30px;
+}
+
+/* skill section styles */
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.skill-item {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-img {
+  width: 90px;
+  height: 90px;
+}
+
+.skill-name {
+  text-align: center;
+}
+
+.skill-name:hover {
+  cursor: default;
 }
 
 /* main header animations */
@@ -216,13 +231,19 @@ svg:hover {
 /* tablet screen size*/
 @media (min-width: 768px) {
   section.portfolio-section {
-    min-height: 100vh;
-  }
-  section.portfolio-section {
     min-width: 18rem;
   }
   .main h1 {
     font-size: 6em;
+  }
+  .skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0;
+  }
+  .skill-img {
+    width: 120px;
+    height: 120px;
   }
 }
 
@@ -256,6 +277,12 @@ svg:hover {
     max-height: 10rem;
     border: 0.5rem solid rgba(255, 255, 255, 0.2);
   }
+  .img-profile {
+    transition: all 0.2s ease-in-out;
+  }
+  .img-profile:hover {
+    transform: scale(1.1);
+  }
   #sideNav .navbar-collapse {
     display: flex;
     align-items: flex-start;
@@ -273,5 +300,18 @@ svg:hover {
   .email-text {
     font-size: 2.5em;
     margin-bottom: 0 !important;
+  }
+  .skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0;
+  }
+  .skill-img {
+    width: 150px;
+    height: 150px;
+  }
+  .svg-icon {
+    width: 100px;
+    height: 100px;
   }
 }
