@@ -47,12 +47,7 @@ h1 {
 }
 h2 {
   font-size: 3.5rem;
-}
-.subheading {
-  text-transform: uppercase;
-  font-weight: 500;
-  font-family: "Saira Condensed", sans-serif;
-  font-size: 1.35rem;
+  text-align: center;
 }
 a {
   color: #007bff;
@@ -64,14 +59,19 @@ a:hover {
 }
 .email-text {
   font-size: 1.5em;
-  margin-bottom: 0 !important;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
 }
 .main h1 {
   font-size: 5em;
 }
+.sub-header,
 .p-text,
 .card-text {
   font-family: "Open Sans", sans-serif;
+}
+.p-text {
+  text-align: center;
 }
 
 /* card styles */
@@ -136,7 +136,7 @@ section.portfolio-section {
   width: 30px;
   height: 18px;
   border-radius: 25px;
-  background-color: #fff;
+  background-color: #343a40;
   transition: background 0.3s;
   transform: translate(0, 25%);
   outline: none;
@@ -157,7 +157,7 @@ section.portfolio-section {
 }
 
 .toggle-switch:checked {
-  background-color: #343a40;
+  background-color: #fff;
 }
 
 .toggle-switch:checked::after {
@@ -298,8 +298,7 @@ section.portfolio-section {
     display: inline-block;
   }
   .email-text {
-    font-size: 2.5em;
-    margin-bottom: 0 !important;
+    font-size: 2em;
   }
   .skills-container {
     display: grid;
