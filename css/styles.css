@@ -85,9 +85,15 @@ a:hover {
   font-weight: 700;
   text-transform: uppercase;
   color: var(--card-header);
+  margin: 0;
 }
+
 p.card-text {
   color: var(--card-text);
+}
+
+.card-text-div {
+  margin: 15px 0px;
 }
 
 /* section styles */
@@ -245,6 +251,9 @@ section.portfolio-section {
     width: 120px;
     height: 120px;
   }
+  .card-text-div {
+    min-height: 105px;
+  }
 }
 
 /* desktop screen size */
@@ -312,5 +321,8 @@ section.portfolio-section {
   .svg-icon {
     width: 100px;
     height: 100px;
+  }
+  .card-text-div {
+    min-height: auto;
   }
 }
